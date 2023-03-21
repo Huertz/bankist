@@ -81,6 +81,19 @@ const displayMovements = function (movements) {
   });
 };
 displayMovements(account1.movements);
-console.log(containerMovements.innerHTML);
+// console.log(containerMovements.innerHTML);
 
 //! computing usernames
+//? function
+const createUserNames = function (user) {
+  user.forEach(function (acc) {
+    acc.userName = acc.owner
+      .toLocaleLowerCase()
+      .split(' ')
+      .map((name) => name[0])
+      .join('');
+  });
+};
+
+createUserNames(accounts); //? stw
+console.log(accounts);
