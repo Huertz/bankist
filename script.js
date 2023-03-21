@@ -83,4 +83,4 @@ const displayMovements = function (movements) {
 displayMovements(account1.movements);
 console.log(containerMovements.innerHTML);
 
-//
+//! computing usernames
